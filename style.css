@@ -1,0 +1,90 @@
+html,body,div,p,h1,ul,ol,li,a,span,em,i,input {
+	margin: 0;padding:0;
+}
+body{ font-family: Arial,"微软雅黑"; font-size:14px;}
+ul{ list-style: none;}
+a{text-decoration: none; color: #ccc;}
+a img{ border:0;}
+.container{ width: 1120px; margin:0 auto;}
+/*header style*/
+#header{ background: url(images/top-black-bg.jpg) repeat-x 0 0;}
+#header .container{ height:100px; }
+.logo{ padding-top:31px; width: 161px; float: left;}
+.menu{ width: auto; float: right; padding-top:30px; display: inline; text-align: right;}
+.menu ul{ display: inline; padding-right: 10px;}
+.menu li{ display: inline; }
+.menu li a{padding:3px 15px;}
+.menu li a.current{ border: 1px solid #666; border/*\**/:none\9; /*all ie*/ border-radius:6px; color: #fff;}
+.menu li a:hover{ color:#fff;}
+.buy_col{ border-left:1px solid #666; display: inline; }
+.buy_col a{padding:3px 15px;border: 1px solid #666; border/*\**/:none\9; border-radius:6px; color: #fff; margin-left: 20px;}
+.buy_col a:hover{border-color:#ccc;}
+.buy_col .buy_btn{ background: #6B89D5;}
+.buy_col .buy_btn:hover{ background: #fff; border-color: #fff; color:#333;}
+.bar{background: url(images/global-gray-bg.jpg) repeat-x 0 0; height: 38px; overflow: hidden; line-height: 38px; text-align: right;}
+.bar:after{background: url(images/global-header-shadow.png) repeat-x 0 0;}
+.bar a{ font-size:12px; color: #45474b; }
+.bar a:hover{ color: #84a3e3; }
+.bar span{ font-size:3px; line-height:3px; font-family:Arial; color: #45474b; padding:0 10px;}
+/**/
+.module{position: relative; width: 100%; height: auto; top:0; overflow: hidden; z-index: 0;}
+.module p,h1{ text-indent: -9999px; z-index: 9999;}
+.m1{background: url(images/background-repeat.png) repeat-x center 0;}	
+.m1 h1{ height: 56px; width: 100%; background: url(images/simple-title.png) no-repeat center center; position: absolute; top:22%;}
+.m1 .product_show{ height: 140px; width: 100%; background: url(images/background-image.png) no-repeat center center;position: absolute; top:50%;}
+.m1 p{ height: 50px; width: 100%; background: url(images/simple-intro.png) no-repeat center center;position: absolute; bottom:10%;}
+.module img{width: 100%;}
+.m2 p{ height: 246px; width: 100%; background: url(images/both-intro.png) no-repeat center center;position: absolute; bottom:10%;}
+.m3 p{ height: 246px; width: 100%; background: url(images/frame-intro.png) no-repeat center center;position: absolute; bottom:10%;}
+.m3 .product_show{ height: 541px; width: 100%; background: url(images/frame-image.png) no-repeat center 0;position: absolute; top:5%;}
+.m3 .full_bg{background: url(images/background.jpg) repeat-x center 60%; height: 100%; width: 100%; overflow: hidden;}
+.m4{background: url(images/background-image-repeat.png) repeat-x center 0; z-index: -1;}	
+.m4 .product_show{ height: 541px; width: 100%; background: url(images/back-image.png) no-repeat right -300px;position: absolute; top:0;}
+.m4 p{ height: 213px; width: 100%; background: url(images/back-intro.png) no-repeat center center;position: absolute; bottom:10%;}
+.m5 .product_show{ height: 517px; width: 100%; background: url(images/accessories-image.jpg) no-repeat right 0;position: absolute; top:0;}
+.m5 p{ height: 181px; width: 100%; background: url(images/accessories-intro.png) no-repeat center center;position: absolute; bottom:10%;}
+.m6 p{ height: 150px; width: 100%; background: url(images/package-intro.png) no-repeat center center;position: absolute; bottom:10%;}
+/*footer style*/
+#footer .service{ height: 162px;overflow: hidden;}
+.service .info{ overflow: hidden; float: left;}
+.service .info ul{float: left; width: 288px;}
+.service .info ul .title{ font-weight: lighter; font-size:18px; color: #434d55; line-height: 18px; padding: 30px 0 20px;}
+.service .info li{padding: 6px 0; font-size:12px; line-height: 12px;}
+.service .info a{ color:#434d55; }
+.service .info a:hover{ color:#84a3e3; }
+.service .contact{ float: right; padding: 32px 0 0;}
+.service .contact p{overflow: hidden; width: 230px;}
+.service .contact .online a{ float: right; width: 117px;height: 34px; background: url(images/need-help-button.png) no-repeat 0 0; line-height: 34px;color: #fff; text-indent: 40px;font-size:16px;}
+.service .contact .phone{ color:#666; font-size: 28px; text-align: right; line-height: 52px;}
+.service .contact .remark{ color:#999; font-size: 12px; text-align: right;}
+.copyright{background: #F1F1F1; height: 62px; line-height: 62px; color:#666; font-size:12px;}
+.copyright .info{}
+/*切换按钮*/
+#progress_nav{position: absolute; right: 50px; top: 40%; display: none;}
+#progress_nav li{ line-height: 14px; width: 10px; padding: 6px 0;}
+#progress_nav li a{ background:#999; width: 6px; height: 6px; border-radius: 50%; display: block; position: relative;}
+#progress_nav li a span{ display:none; position: absolute; width: 4em; left:-4.5em; top:-3px; line-height: 14px;}
+#progress_nav li.current a{border:#6c6c6c solid 1px; background: transparent; margin-left: -2px;}
+#progress_nav li a:hover span{display: block;}
+/*副本导航*/
+#cloneMenu{ color: #fff;  
+box-shadow: rgba(0,0,0,.2) 0 0 6px;
+background-color/*\**/:#fff\9; /*all ie*/
+width: 100%; height: 50px; position: absolute; right: 0;top: 0;display: none; z-index: 999999;}
+.white_bg{	
+	background-color: rgba(247, 247, 247, 0.95); /*for FF webkit*/ }
+.black_bg{background-color: rgba(7, 7, 7, 0.95); /*for FF webkit*/}
+#cloneMenu.black_bg .menu li a{ color:#666;}
+#cloneMenu.black_bg .menu li a.current{  color: #999;}
+#cloneMenu.black_bg .buy_col a{ color: #666;}
+#cloneMenu.black_bg .buy_col .buy_btn{ color: #fff;}
+#cloneMenu .logo{ float: left; background: url(images/product-title-bg.png) no-repeat 0 0; height: 17px; width: 124px; margin: 16px 0 0; font-size:12px;}
+#cloneMenu .menu{ padding-top:16px; float: right;}
+#cloneMenu .menu li a{padding:3px 15px; color: #333; border:none;}
+#cloneMenu .menu li a.current{  color: #666;}
+#cloneMenu .menu li a:hover{ color:#84a3e3;}
+#cloneMenu .buy_col{ border-left:1px solid #666;  display: inline; }
+#cloneMenu .buy_col a{padding:3px 15px;border:none; color: #333; margin-left: 20px;}
+#cloneMenu .buy_col a:hover{color:#84a3e3;}
+#cloneMenu .buy_col .buy_btn{ background: #6B89D5; color:#fff;}
+#cloneMenu .buy_col .buy_btn:hover{ background: #9989D9; border-color: none; color:#fff;}

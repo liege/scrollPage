@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>滚动切换垂直页面</title>
+	<link rel="stylesheet" href="style.css" />
+
+<!--[if IE]>
+	<script type="text/javascript">
+    alert('笑死人了，你还在用IE浏览器!\n骚年，快去下载谷歌浏览器以获得最佳浏览效果');
+    window.open("http://www.google.cn/intl/zh-CN/chrome/");
+	</script>	
+<![endif]-->
+<!--[if IE 6]>
+	<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+	<script type="text/javascript">
+	DD_belatedPNG.fix('img,p,div,.logo');
+	</script>	
+<![endif]-->	
+	<script src="js/jquery-1.8.0.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>	
+	<script src="js/scroll.js"></script>
+</head>
+<body>
+<div id="container">
+	<div id="header" data-scroll="module">
+		<div class="container">
+			<div class="logo"><a href="#"><img src="images/logo.png" alt="" /></a></div>
+			<div class="menu">
+				<ul>
+					<li><a href="#">概览</a></li>
+					<li><a href="#">功能</a></li>
+					<li><a class="current" href="#">设计</a></li>
+					<li><a href="#">操作系统</a></li>
+					<li><a href="#">技术规格</a></li>
+				</ul>
+				<div class="buy_col">
+					<a href="#">兑换码</a><a href="#" class="buy_btn">现在订阅</a>
+				</div>
+			</div>
+		</div>
+		<div class="bar">
+			<div class="container">
+				<a href="#">登录</a><span>|</span><a href="#">注册</a>
+			</div>
+		</div>	
+	</div>
+	<!--content begin-->
+	<div id="content">
+		<div class="module m1" data-scroll="module">
+			<h1></h1>
+			<div class="product_show"></div>
+			<p class="product_intro">蕴繁于简</p>
+		</div>
+		<div class="module m2" data-scroll="module" data-color="black">
+			<div class="product_show">
+				<img src="images/background-image.jpg" alt="" />
+			</div>
+			<p class="product_intro">左右逢源</p>
+		</div>
+		<div class="module m3" data-scroll="module">
+			<div class="product_show"></div>
+			<p class="product_intro">以柔制刚</p>
+			<div class="full_bg"></div>
+		</div>
+		<div class="module m4" data-scroll="module">
+			<div class="product_show"></div>
+			<p class="product_intro">至曲近平</p>
+			<div class="full_bg"></div>
+		</div>
+		<div class="module m5" data-scroll="module">
+			<div class="product_show"></div>
+			<p class="product_intro">由感而知</p>
+		</div>
+		<div class="module m6" data-scroll="module" data-color="black">
+			<div class="product_show">
+				<img src="images/package-image.jpg" alt="" />
+			</div>
+			<p class="product_intro">宁静周致</p>
+		</div>
+	</div>	
+	<!--content end-->
+	<div id="footer" data-scroll="module">
+		<div class="service container">			
+			<div class="info">
+				<ul>
+					<li class="title">订单服务</li>
+					<li><a href="#">预订指南</a></li>
+					<li><a href="#">支付方式</a></li>
+					<li><a href="#">送货政策</a></li>
+				</ul>
+				<ul>
+					<li class="title">服务与支持</li>
+					<li><a href="#">售后服务</a></li>
+					<li><a href="#">常见问题</a></li>
+					<li><a href="#">优码兑换</a></li>
+				</ul>
+				<ul>
+					<li class="title">关于公司</li>
+					<li><a href="#">公司简介</a></li>
+					<li><a href="#">加入我们</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+			<div class="contact">
+				<p class="online"><a href="#">在线咨询</a></p>
+				<p class="phone">400-619-0909</p>
+				<p class="remark">周一至周日 9:00-18:00（仅收市话费）</p>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="copy">Copyright © 2012-2014, Smartisan Technology Co., Ltd. All Rights Reserved. 锤子科技（北京）有限公司</div>
+				<div class="sns"></div>
+			</div>
+		</div>
+	</div>	
+</div>	
+<div id="progress_nav">
+	<ul>
+		<li class="current"><a href="#"><span>蕴繁于简</span></a></li>
+		<li><a href="#"><span>左右逢源</span></a></li>
+		<li><a href="#"><span>以柔制刚</span></a></li>
+		<li><a href="#"><span>至曲近平</span></a></li>
+		<li><a href="#"><span>由感而知</span></a></li>
+		<li><a href="#"><span>宁静周致</span></a></li>
+	</ul>
+</div>
+<div id="cloneMenu" class="white_bg"></div>
+</body>
+</html>
